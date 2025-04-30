@@ -6,14 +6,20 @@
 
 :root {
   --base-bg: #ffff;
-  --base-width-container: 450px;
+  --base-width-container: 1200px;
   --base-bg-button: #4308e7;
   --base-color-button: #fff;
+  --base-font-size: 3rem;
+  --first-shadow-color: rgba(0, 0, 0, 0.1);
 }
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--base-bg);
   padding-inline: 1rem;
+  flex-shrink: 1;
+}
+.logo {
+  flex-shrink: 0;
 }
 
 .navbar {
@@ -84,7 +90,7 @@ body {
   background-color: #a4aeaf;
 }
 .hero-section {
-  max-width: 1200px;
+  max-width: var(--base-width-container);
   margin: 0 auto;
   padding: 4rem 2rem;
 }
@@ -102,7 +108,7 @@ body {
 }
 
 .hero-title h1 {
-  font-size: 3rem;
+  font-size: var(--base-font-size);
   font-weight: bold;
   line-height: 1.2;
 }
@@ -124,4 +130,36 @@ body {
   width: 100%;
   height: auto;
   display: block;
+}
+.project-section {
+  background-color: var(--base-bg);
+  max-width: var(--base-width-container);
+  margin: auto;
+  padding: 1rem 2rem;
+}
+.project-container {
+  margin-top: 3rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.project-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 30%;
+  padding-left: 1rem;
+  height: 250px;
+  background: var(--color-white);
+  border-radius: 20px;
+  box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+  overflow: hidden;
+  gap: 20px;
+}
+.icon {
+  font-size: 48px !important;
 }
