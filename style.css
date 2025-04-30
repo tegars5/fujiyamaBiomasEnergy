@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+:root {
+  --base-bg: #ffff;
+  --base-width-container: 450px;
+  --base-bg-button: #4308e7;
+  --base-color-button: #fff;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--base-bg);
+  padding-inline: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--base-bg);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.logo {
+  max-width: 50px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.nav-links li a {
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+  color: black;
+}
+
+.nav-links li a:hover {
+  color: var(--base-bg-button);
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.track-btn,
+.login-btn {
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.track-btn {
+  background-color: transparent;
+  color: black;
+}
+
+.login-btn {
+  background-color: var(--base-bg-button);
+  color: var(--base-color-button);
+  font-weight: bold;
+}
+
+.track-btn:hover {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.login-btn:hover {
+  background-color: #a4aeaf;
+}
+.hero-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-wrap: wrap;
+}
+
+.hero-title {
+  flex: 2;
+  max-width: 580px;
+}
+
+.hero-title h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.hero-description {
+  flex: 1;
+  font-size: 1rem;
+  color: #333;
+  max-width: 300px;
+  align-items: end;
+}
+
+.hero-image {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
