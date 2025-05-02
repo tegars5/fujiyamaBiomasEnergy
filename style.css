@@ -20,6 +20,7 @@ body {
 }
 .logo {
   flex-shrink: 0;
+  width: 50px;
 }
 
 .navbar {
@@ -34,10 +35,6 @@ body {
   list-style: none;
   display: flex;
   gap: 2rem;
-}
-
-.logo {
-  max-width: 50px;
 }
 
 .logo img {
@@ -93,6 +90,7 @@ body {
   max-width: var(--base-width-container);
   margin: 0 auto;
   padding: 4rem 2rem;
+  border-top: 2px solid #eee;
 }
 
 .hero-top {
@@ -162,4 +160,127 @@ body {
 }
 .icon {
   font-size: 48px !important;
+}
+
+/* map */
+
+.industry-section {
+  background-color: var(--base-bg-button);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+.industry-header {
+  font-size: 1.2rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #cfd8ff;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: var(--base-width-container);
+  padding: 2rem;
+  margin-left: 8rem;
+}
+.top-industry {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 550px;
+  margin-left: 10rem;
+}
+
+.industry-map {
+  margin: 3rem 0;
+  background: var(--base-bg-button);
+  margin-left: 10rem;
+}
+
+.industry-map img {
+  max-width: 100%;
+  height: auto;
+}
+
+.industry-stats {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  flex-wrap: wrap;
+  max-width: var(--base-width-container);
+  gap: 4rem;
+  margin-left: 7rem;
+}
+
+.stat-box h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.stat-box p {
+  font-size: 1rem;
+  color: #cfd8ff;
+  max-width: 300px;
+}
+/* Testimonial Section */
+.testimonial-box {
+  display: flex;
+  background-color: var(--base-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  padding-top: 4rem;
+  max-width: var(--base-width-container);
+  margin: auto;
+  gap: 2rem;
+}
+.testimonial-image {
+  width: 100%;
+  max-width: 200px;
+  object-fit: cover;
+}
+.testimonial-text {
+  flex: 1;
+  padding: 20px;
+}
+.author {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-direction: row;
+}
+.brand-logo {
+  width: 100px;
+  margin-top: 10px;
+  filter: grayscale(100%);
+}
+
+/* Logos */
+.brand-logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  border-top: 2px solid #eee;
+}
+.brand-logos > .brand-logo > img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+.brand-logos > .brand-logo:hover > img {
+  filter: grayscale(100%);
+  transition: filter 0.3s;
 }
