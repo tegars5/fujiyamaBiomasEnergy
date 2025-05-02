@@ -35,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth <= 768) {
       toggleBtn.style.display = "block";
       navLinks.style.display = "none";
-      navLinks.style.width = "100%";
       navLinks.style.marginTop = "1rem";
     } else {
       toggleBtn.style.display = "none";
@@ -94,7 +93,7 @@ window.addEventListener("scroll", function () {
       box.style.opacity = "1";
       box.style.transform = "translateY(0)";
     }
-  });   
+  });
 });
 
 // Tambahkan animasi awal ke project-box
